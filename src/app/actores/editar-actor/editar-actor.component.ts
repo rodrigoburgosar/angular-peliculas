@@ -13,7 +13,7 @@ export class EditarActorComponent {
   @Input({transform:numberAttribute})
   id!:number;
 
-  actor:ActorDTO={id:1,nombre:"Tom holland",fechaNacimiento:new Date('1999-01-25')}
+  actor:ActorDTO={id:1,nombre:"Tom holland",fechaNacimiento:new Date('1999-01-25'),foto:'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Tom_Holland_by_Gage_Skidmore.jpg/220px-Tom_Holland_by_Gage_Skidmore.jpg'}
 
   guardarCambios(actor:ActorCreacionDTO){
     console.log("editando",actor);
